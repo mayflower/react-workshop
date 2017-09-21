@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Adds up two more numbers 1`] = `3`;
+
+exports[`Adds up two more numbers 2`] = `26`;
+
+exports[`Adds up two more numbers 3`] = `11`;
+
+exports[`Adds up two more numbers 4`] = `15`;
+
+exports[`Adds up two more numbers 5`] = `109`;
