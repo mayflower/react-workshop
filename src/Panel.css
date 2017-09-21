@@ -1,0 +1,20 @@
+.Panel {
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 3px;
+    transition: box-shadow 250ms;
+}
+.Panel:hover {
+    box-shadow: 0 0 13px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.Panel .headline {
+    padding: 4px 5px;
+    font-weight: bold;
+    background: #ccc;
+    color: black;
+}
+.Panel .message {
+    padding: 0 5px;
+    color: #444;
+}
