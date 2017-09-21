@@ -28,7 +28,9 @@ class Panel extends Component {
                 <p>
                     Additional content: {this.state.message}
                 </p>
-                <button onClick={this.submit}>{this.state.buttonText}</button>
+                <p>
+                    <button onClick={this.submit}>{this.state.buttonText}</button>
+                </p>
             </div>
         );
     }
