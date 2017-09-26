@@ -1,0 +1,21 @@
+{
+  "name": "mq1x53xovp",
+  "description": null,
+  "version": "0.0.53",
+  "dependencies": {
+    "redux": "3.7.2",
+    "react-redux": "5.0.6",
+    "react-dom": "15.6.2",
+    "react": "15.6.2",
+    "material-ui": "0.19.2"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
