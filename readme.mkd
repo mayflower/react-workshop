@@ -1,3 +1,5 @@
-# Several React-Lessons
+# All about promises vs. callbacks
 
-## More information to come.
+## What's the advantage?
+* A cool explaination can bei found [here](https://www.quora.com/Whats-the-difference-between-a-promise-and-a-callback-in-Javascript)
+* Official Documentation of Javascript [Prosmises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
