@@ -15,7 +15,8 @@ function merge(obj) { return Object.assign(obj, {anotherProp: 'heheh'}) };
 ///////// SIMPLE CALLBACK SOLUTION ////////////////////////////////
 ///////////////////////////////////////////////////////////////////
 function ajaxCall(cbSuccess, cbError) {
-    return dst() && setTimeout(function () {
+    console.log('Making a long distance ajax call.');
+    setTimeout(function () {
         ajaxSuccess ? cbSuccess(successObj) : cbError('Access denied.');
     }, 2000)
 }
@@ -23,11 +24,11 @@ function ajaxCall(cbSuccess, cbError) {
 ///////////////////////////////////////////////////////////////////
 // Ajax call mit callbacks ////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
-// ajaxCall(function(msg) {
-//   console.log('Simple callback reponse', msg);
-// }, function (err) {
-//   console.log('An error occured', err);
-// });
+ajaxCall(function(msg) {
+  console.log('Simple callback reponse', msg);
+}, function (err) {
+  console.log('An error occured', err);
+});
 
 ///////////////////////////////////////////////////////////////////
 // Ajax call mit callbacks und middleware /////////////////////////
@@ -44,22 +45,3 @@ function ajaxCall(cbSuccess, cbError) {
 // }, function (error) {
 //     console.log('OMG OMG !!! An error occured', err);
 // });
-
-
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////
-///////////////////// JUST HELPER FUNCTIONS HERE //////////////////
-///////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////
-function dst() {
-    console.log('Making a long distance ajax call.');
-    return true;
-}
-

@@ -15,7 +15,8 @@ function merge(obj) { return Object.assign(obj, {anotherProp: 'heheh'}) };
 ///////////////// PROMISE BASED SOLUTION //////////////////////////
 ///////////////////////////////////////////////////////////////////
 function ajaxPromise() {
-    return dst() && new Promise(function (resolve, reject) {
+    console.log('Making a long distance ajax call.');
+    return new Promise(function (resolve, reject) {
         setTimeout(function () {
             ajaxSuccess ? resolve(successObj) : reject('Timeout in connection');
         }, 2000)
@@ -46,22 +47,3 @@ ajaxPromise()
 //     .catch(function (err) {
 //         console.log('OMG OMG !!! An error occured =>', err);
 //     });
-
-
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////
-///////////////////// JUST HELPER FUNCTIONS HERE //////////////////
-///////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////
-function dst() {
-    console.log('Making a long distance ajax call.');
-    return true;
-}
-
