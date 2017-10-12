@@ -1,1 +1,10 @@
-# Several React-Lessons
+# React-Session: Jest tests with typescript
+
+
+## Description
+This session covers the topic "How to write jest tests with typescript".
+We're also using the cool "snapshot" feature fom jest to avoid copy/pasting javascript objects to compare them.
+
+## Installation
+* `npm i`
+* `npm test`
