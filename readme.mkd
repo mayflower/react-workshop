@@ -7,6 +7,6 @@ which outsources its action handlers to redux.
 
 ## Installation
 
-* npm i
-* npm start
+* `npm i`
+* `npm start`
 
