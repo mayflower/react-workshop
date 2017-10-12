@@ -1,12 +1,9 @@
-# React Sessions: Einfaches Projekt
+# React Sessions: Simple Component
 
-In diesem Projekt wird eine "Panel"-Component mehrfach verwendet.
+This sessions shows how to create a react component and how to re-use it.
+We're integratiting also a CSS-Files in a component via `import` and we'll pre-define the component's properties with default props`
 
-## Was kommt zum Einsatz?
-* CSS-Files in eine Komponente integrieren
-* Default props
-
-# Installation
-* `yarn install`
-* `yarn run test`
-* `yarn run start`
+## Installation
+* `npm install`
+* `npm run test`
+* `npm run start`
