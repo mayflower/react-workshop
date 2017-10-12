@@ -1,3 +1,12 @@
-# Several React-Lessons
+# Several React-Lessons: Simple Redux
 
-## More information to come.
+## Description
+
+This lesson contains a simple click counter
+which outsources its action handlers to redux.
+
+## Installation
+
+* npm i
+* npm start
+
