@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { incrementCounter, decrementCounter } from "./actions";
 import FlatButton from "material-ui/FlatButton";
@@ -30,19 +30,20 @@ const colors = [
 ];
 
 const App = props => {
+  const { value, onIncrement, onDecrement } = props;
   const infoStyle = {
-    visibility: props.value > 0 ? "visible" : "hidden",
-    color: colors[props.value - 1]
+    visibility: value > 0 ? "visible" : "hidden",
+    color: colors[value - 1]
   };
   return (
     <Card>
       <CardTitle title="Simple click counter" subtitle="Click - or + button" />
       <CardText>
-        <p style={infoStyle}>Du hast schon {props.value} mal geklick</p>
+        <p style={infoStyle}>Du hast schon {value} mal geklick</p>
       </CardText>
       <CardActions>
-        <FlatButton onClick={props.onDecrement} label="-" />
-        <FlatButton primary onClick={props.onIncrement} label="+" />
+        <FlatButton onClick={onDecrement} label="-" />
+        <FlatButton primary onClick={onIncrement} label="+" />
       </CardActions>
     </Card>
   );
@@ -51,7 +52,7 @@ const App = props => {
 const mapStateToProps = state => {
   return {
     value: state
-  };
+  }
 };
 
 const mapDispatchToProps = {
