@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header/>
+        <Header results={this.state.results}/>
         <section className="container">
           <Search onFind={this.updateResults}/>
           <List results={this.state.results} />
@@ -31,3 +31,4 @@ class App extends Component {
 }
 
 export default App;
+
