@@ -16,11 +16,13 @@ class List extends Component {
           {numberOfResults} results found:
         </h2>
         <table className="table">
-          {this.props.results.map(result =>
-            <tr key={result.id}>
-              <td>{result.name}</td>
-            </tr>
-          )}
+          <tbody>
+            {this.props.results.map(result =>
+              <tr key={result.id}>
+                <td>{result.name}</td>
+              </tr>
+            )}
+          </tbody>
         </table>
       </section>
     )
