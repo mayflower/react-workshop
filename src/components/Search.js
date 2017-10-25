@@ -30,7 +30,9 @@ class Search extends Component {
 
   search (term) {
     console.log('Faking ajax call to API endpoint');
-    this.props.onFind(exampleResult.filter(item => item.name.toLowerCase().indexOf(this.state.searchTerm.toLowerCase()) > -1));
+    this.props.onFind(exampleResult.filter(item =>
+      item.name.toLowerCase().indexOf(this.state.searchTerm.toLowerCase()) > -1)
+    );
   }
 
   render() {
